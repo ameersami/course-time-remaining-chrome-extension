@@ -1,0 +1,43 @@
+<style>
+    .course--overview-container {
+      width: 100%;
+      height: auto;
+      padding: 5px 10px;
+      background: white;
+      position: relative;
+      top: 0;
+      font-size: 14px;
+      border-bottom: 1px solid #616161;
+    }
+    .course--overview--container__progress {
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      background: #193549;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+    }
+    .course--overview__text {
+      background: #efefef;
+      padding: 2px 5px;
+      top: 0px;
+      margin-left: 5px;
+      color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .inspoText {
+      right: 0px;
+      position: absolute;
+      top: 2px;
+    }
+  </style>
+<div class="course--overview-container">
+  <span id="courseCount" class="course--overview__text"></span>
+  <span id="courseDuration" class="course--overview__text"></span>
+  <span class="course--overview__text inspoText">You got it, keep going!</span>
+  <div class="course--overview--container__progress"></div>
+</div>
